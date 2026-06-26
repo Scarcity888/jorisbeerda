@@ -89,17 +89,20 @@
   /* CASE STUDIES */
   .cases { padding:96px 48px; max-width:1080px; margin:0 auto; }
   .cases-header { margin-bottom:52px; }
-  .cases-header .section-label { font-size:12px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); margin-bottom:16px; }
-  .cases-header h2 { font-family:'Playfair Display',serif; font-size:36px; font-weight:500; }
-  .case-card { background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:36px; margin-bottom:18px; display:grid; grid-template-columns:200px 1fr auto; gap:32px; align-items:start; transition:all .3s; box-shadow:0 2px 8px rgba(0,0,0,0.03); }
+  .cases-header .section-label { font-size:13px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin-bottom:16px; }
+  .cases-header h2 { font-family:'Playfair Display',serif; font-size:40px; font-weight:500; line-height:1.15; }
+  .case-card { background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:40px; margin-bottom:20px; display:grid; grid-template-columns:1fr 180px; gap:28px; align-items:start; transition:all .3s; box-shadow:0 2px 8px rgba(0,0,0,0.03); }
   .case-card:hover { border-color:var(--accent); box-shadow:0 8px 28px rgba(0,0,0,0.06); }
-  .case-client { font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin-bottom:8px; }
-  .case-challenge { font-size:13px; color:var(--text-muted); line-height:1.6; }
-  .case-body h3 { font-family:'Playfair Display',serif; font-size:22px; font-weight:500; margin-bottom:12px; line-height:1.25; }
-  .case-body p { font-size:14px; color:var(--text-muted); line-height:1.75; }
-  .case-metric { text-align:right; }
-  .case-metric-number { font-family:'Playfair Display',serif; font-size:28px; font-weight:500; color:var(--accent); line-height:1; margin-bottom:6px; }
-  .case-metric-label { font-size:11px; color:var(--text-dim); letter-spacing:.06em; text-transform:uppercase; }
+  .case-card-left { display:flex; flex-direction:column; gap:6px; }
+  .case-client { font-size:13px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:4px; }
+  .case-challenge { font-size:15px; color:var(--text-muted); line-height:1.65; }
+  .case-body h3 { font-family:'Playfair Display',serif; font-size:24px; font-weight:500; margin-bottom:12px; line-height:1.25; }
+  .case-body p { font-size:15px; color:var(--text-muted); line-height:1.75; }
+  .case-card-right { text-align:right; display:flex; flex-direction:column; align-items:flex-end; gap:12px; }
+  .case-metric-number { font-family:'Playfair Display',serif; font-size:44px; font-weight:600; color:var(--accent); line-height:1; margin-bottom:4px; }
+  .case-metric-label { font-size:13px; color:var(--text-dim); letter-spacing:.04em; text-transform:uppercase; }
+  .case-readmore { display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:600; color:var(--text); text-decoration:none; padding:8px 18px; border:1px solid var(--border-dark); border-radius:6px; transition:all .2s; margin-top:4px; }
+  .case-readmore:hover { border-color:var(--accent); color:var(--accent); background:var(--accent-soft); }
 
   /* CTA */
   .cta-section { padding:96px 48px; text-align:center; background:var(--bg); }
@@ -134,7 +137,7 @@
   <a href="index.html" class="nav-logo">Joris<span>.</span>Beerda</a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
-    <li><a href="#contact" class="nav-cta">Book a Strategy Session</a></li>
+    <li><a href="mailto:yours@adoptthebook.com" class="nav-cta">Book a Strategy Session</a></li>
   </ul>
 </nav>
 
@@ -166,97 +169,127 @@
 
 <section class="cases" id="cases">
   <div class="cases-header">
-    <div class="section-label">Proven Enterprise Results</div>
+    <div class="section-label">Joris Beerda's impact with Enterprise Gamification</div>
     <h2>Six engagements. Real outcomes.</h2>
   </div>
 
   <div class="case-card">
-    <div>
-      <div class="case-client">Booking.com</div>
-      <div class="case-challenge">High cart abandonment. Urgency architecture needed tuning across Core Drive 6 (Scarcity) and Core Drive 5 (Social Influence).</div>
+    <div class="case-card-left">
+      <div>
+        <div class="case-client">Booking.com</div>
+        <div class="case-challenge">High cart abandonment. Urgency architecture needed tuning across Core Drive 6 (Scarcity) and Core Drive 5 (Social Influence).</div>
+      </div>
+      <div class="case-body">
+        <h3>Global Conversion Optimization</h3>
+        <p>Defined the Urgency Architecture behind conversion at global scale. Countdown timers, limited quantity logic, and loss aversion mechanics closed the intention-action gap for millions of users.</p>
+      </div>
     </div>
-    <div class="case-body">
-      <h3>Global Conversion Optimization</h3>
-      <p>Defined the Urgency Architecture behind conversion at global scale. Countdown timers, limited quantity logic, and loss aversion mechanics closed the intention-action gap for millions of users.</p>
-    </div>
-    <div class="case-metric">
-      <div class="case-metric-number">+80%</div>
-      <div class="case-metric-label">Gross Profit</div>
-    </div>
-  </div>
-
-  <div class="case-card">
-    <div>
-      <div class="case-client">Porsche / VW Group</div>
-      <div class="case-challenge">Transactional rewards were not driving daily engagement. The program needed lifestyle gamification that rewarded driving behavior, not just spending.</div>
-    </div>
-    <div class="case-body">
-      <h3>Automotive Loyalty Innovation</h3>
-      <p>Built BONEO: a lifestyle gamification ecosystem using Core Drive 7 (Unpredictability) and Core Drive 3 (Empowerment). Turned the vehicle into a connected engagement platform.</p>
-    </div>
-    <div class="case-metric">
-      <div class="case-metric-number">90%</div>
-      <div class="case-metric-label">Daily Active Users</div>
+    <div class="case-card-right">
+      <div>
+        <div class="case-metric-number">+80%</div>
+        <div class="case-metric-label">Gross Profit</div>
+      </div>
+      <a href="#" class="case-readmore">Read full case study &rarr;</a>
     </div>
   </div>
 
   <div class="case-card">
-    <div>
-      <div class="case-client">Procter &amp; Gamble</div>
-      <div class="case-challenge">Sales force fatigue from CRM data entry. The team needed to turn routine logging into an immersive trade simulation.</div>
+    <div class="case-card-left">
+      <div>
+        <div class="case-client">Porsche / VW Group</div>
+        <div class="case-challenge">Transactional rewards were not driving daily engagement. The program needed lifestyle gamification that rewarded driving behavior, not just spending.</div>
+      </div>
+      <div class="case-body">
+        <h3>Automotive Loyalty Innovation</h3>
+        <p>Built BONEO: a lifestyle gamification ecosystem using Core Drive 7 (Unpredictability) and Core Drive 3 (Empowerment). Turned the vehicle into a connected engagement platform.</p>
+      </div>
     </div>
-    <div class="case-body">
-      <h3>Sales Force Transformation</h3>
-      <p>Applied Core Drive 5 (Social Influence) through team quests and collaborative leaderboards, shifting the motivational anchor from extrinsic financial pressure to social relatedness.</p>
-    </div>
-    <div class="case-metric">
-      <div class="case-metric-number">+28.6%</div>
-      <div class="case-metric-label">Revenue Increase</div>
-    </div>
-  </div>
-
-  <div class="case-card">
-    <div>
-      <div class="case-client">Pfizer</div>
-      <div class="case-challenge">Medication non-adherence. Traditional nagging notifications were not working. Patients needed emotional ownership over health outcomes.</div>
-    </div>
-    <div class="case-body">
-      <h3>Patient Adherence &amp; Health Habits</h3>
-      <p>Applied a Hero's Journey narrative (Core Drive 1: Epic Meaning) with Tamagotchi dynamics in the Sidekick app. Patients could visualize recovery as a progression path.</p>
-    </div>
-    <div class="case-metric">
-      <div class="case-metric-number">-30%</div>
-      <div class="case-metric-label">Patient Dropout</div>
+    <div class="case-card-right">
+      <div>
+        <div class="case-metric-number">90%</div>
+        <div class="case-metric-label">Daily Active Users</div>
+      </div>
+      <a href="#" class="case-readmore">Read full case study &rarr;</a>
     </div>
   </div>
 
   <div class="case-card">
-    <div>
-      <div class="case-client">LATAM Airlines</div>
-      <div class="case-challenge">Transactional mileage program was not driving acquisition. The program needed intrinsic exploration mechanics across South American markets.</div>
+    <div class="case-card-left">
+      <div>
+        <div class="case-client">Procter &amp; Gamble</div>
+        <div class="case-challenge">Sales force fatigue from CRM data entry. The team needed to turn routine logging into an immersive trade simulation.</div>
+      </div>
+      <div class="case-body">
+        <h3>Sales Force Transformation</h3>
+        <p>Applied Core Drive 5 (Social Influence) through team quests and collaborative leaderboards, shifting the motivational anchor from extrinsic financial pressure to social relatedness.</p>
+      </div>
     </div>
-    <div class="case-body">
-      <h3>Loyalty Program ROI</h3>
-      <p>Built a Treasure Hunt narrative structure with geo-location mechanics and collection sets (Core Drive 4), gamifying the user acquisition funnel across the continent.</p>
-    </div>
-    <div class="case-metric">
-      <div class="case-metric-number">+153%</div>
-      <div class="case-metric-label">Card Acquisitions</div>
+    <div class="case-card-right">
+      <div>
+        <div class="case-metric-number">+28.6%</div>
+        <div class="case-metric-label">Revenue Increase</div>
+      </div>
+      <a href="#" class="case-readmore">Read full case study &rarr;</a>
     </div>
   </div>
 
   <div class="case-card">
-    <div>
-      <div class="case-client">Microsoft</div>
-      <div class="case-challenge">Static technical documentation was not driving voluntary upskilling. The platform needed a dynamic skill-building career journey.</div>
+    <div class="case-card-left">
+      <div>
+        <div class="case-client">Pfizer</div>
+        <div class="case-challenge">Medication non-adherence. Traditional nagging notifications were not working. Patients needed emotional ownership over health outcomes.</div>
+      </div>
+      <div class="case-body">
+        <h3>Patient Adherence &amp; Health Habits</h3>
+        <p>Applied a Hero's Journey narrative (Core Drive 1: Epic Meaning) with Tamagotchi dynamics in the Sidekick app. Patients could visualize recovery as a progression path.</p>
+      </div>
     </div>
-    <div class="case-body">
-      <h3>Azure Learning Ecosystem</h3>
-      <p>Designed Microsoft Learn with a balanced XP economy and non-linear progression trees (Core Drive 2: Development), optimized for flow state. Converted passive readers into active learners.</p>
+    <div class="case-card-right">
+      <div>
+        <div class="case-metric-number">-30%</div>
+        <div class="case-metric-label">Patient Dropout</div>
+      </div>
+      <a href="#" class="case-readmore">Read full case study &rarr;</a>
     </div>
-    <div class="case-metric">
-      <div class="case-metric-number">90%</div>
-      <div class="case-metric-label">Active Learners</div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-card-left">
+      <div>
+        <div class="case-client">LATAM Airlines</div>
+        <div class="case-challenge">Transactional mileage program was not driving acquisition. The program needed intrinsic exploration mechanics across South American markets.</div>
+      </div>
+      <div class="case-body">
+        <h3>Loyalty Program ROI</h3>
+        <p>Built a Treasure Hunt narrative structure with geo-location mechanics and collection sets (Core Drive 4), gamifying the user acquisition funnel across the continent.</p>
+      </div>
+    </div>
+    <div class="case-card-right">
+      <div>
+        <div class="case-metric-number">+153%</div>
+        <div class="case-metric-label">Card Acquisitions</div>
+      </div>
+      <a href="#" class="case-readmore">Read full case study &rarr;</a>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-card-left">
+      <div>
+        <div class="case-client">Microsoft</div>
+        <div class="case-challenge">Static technical documentation was not driving voluntary upskilling. The platform needed a dynamic skill-building career journey.</div>
+      </div>
+      <div class="case-body">
+        <h3>Azure Learning Ecosystem</h3>
+        <p>Designed Microsoft Learn with a balanced XP economy and non-linear progression trees (Core Drive 2: Development), optimized for flow state. Converted passive readers into active learners.</p>
+      </div>
+    </div>
+    <div class="case-card-right">
+      <div>
+        <div class="case-metric-number">90%</div>
+        <div class="case-metric-label">Active Learners</div>
+      </div>
+      <a href="#" class="case-readmore">Read full case study &rarr;</a>
     </div>
   </div>
 </section>
@@ -264,7 +297,7 @@
 <section class="cta-section" id="contact">
   <h2>Ready to design motivation that moves your numbers?</h2>
   <p>Enterprise consulting, speaking inquiries, and strategy sessions.</p>
-  <a href="mailto:joris@octalysisgroup.com" class="btn-primary">Book a Strategy Session &rarr;</a>
+  <a href="mailto:yours@adoptthebook.com" class="btn-primary">Book a Strategy Session &rarr;</a>
 </section>
 
 <footer>

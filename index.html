@@ -104,11 +104,11 @@
   .endorsement-photo img { width:180px; height:180px; object-fit:cover; border-radius:50%; border:3px solid var(--bg-card); box-shadow:0 8px 28px rgba(0,0,0,0.1); }
 
   /* CLIENT LOGOS */
-  .clients { padding:48px 48px; text-align:center; }
-  .clients-label { font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--text-dim); margin-bottom:28px; }
-  .client-logos { display:flex; justify-content:center; flex-wrap:wrap; gap:24px; align-items:center; }
-  .client-logo img { height:32px; width:auto; filter:grayscale(1) opacity(0.55); transition:filter .3s ease; }
-  .client-logo:hover img { filter:grayscale(0) opacity(1); }
+  .clients { padding:56px 48px; text-align:center; }
+  .clients-label { font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--text-dim); margin-bottom:32px; }
+  .client-logos { display:flex; justify-content:center; flex-wrap:wrap; gap:34px; align-items:center; }
+  .client-logo { height:40px; width:auto; filter:grayscale(1) opacity(0.58); transition:filter .3s ease; }
+  .client-logo:hover { filter:grayscale(0) opacity(1); }
 
   /* STATS */
   .stats { display:grid; grid-template-columns:repeat(4,1fr); border-bottom:1px solid var(--border); background:var(--bg); }
@@ -121,8 +121,7 @@
   .validation { padding:80px 48px; background:var(--bg-mid); border-top:1px solid var(--border); border-bottom:1px solid var(--border); text-align:center; }
   .validation h2 { font-family:'Playfair Display',serif; font-size:28px; font-weight:500; margin-bottom:40px; }
   .validation-logos { display:flex; justify-content:center; flex-wrap:wrap; gap:48px; align-items:center; }
-  .validation-logo img { height:38px; width:auto; filter:grayscale(1) opacity(0.55); transition:filter .3s ease; }
-  .validation-logo:hover img { filter:grayscale(0) opacity(1); }
+  .validation-logo { height:38px; width:auto; filter:grayscale(1) opacity(0.55); }
 
   /* CTA */
   .cta-section { padding:96px 48px; text-align:center; background:var(--bg); }
@@ -161,7 +160,7 @@
   <a href="index.html" class="nav-logo">Joris<span>.</span>Beerda</a>
   <ul class="nav-links">
     <li><a href="about-joris-beerda.html">About</a></li>
-    <li><a href="#contact" class="nav-cta">Book a Strategy Session</a></li>
+    <li><a href="mailto:yours@adoptthebook.com" class="nav-cta">Book a Strategy Session</a></li>
   </ul>
 </nav>
 
@@ -172,7 +171,7 @@
     <h1>Designing <span class="accent-text">Human Motivation</span> for the world's largest companies.</h1>
     <p>Joris Beerda is the CEO of The Octalysis Group, the world's leading consultancy on behavioral design and gamification. Globally recognized as the number one expert in Enterprise Gamification and the leading implementer of the Octalysis Framework.</p>
     <div class="hero-ctas">
-      <a href="#contact" class="btn-primary">Book a Strategy Session &rarr;</a>
+      <a href="mailto:yours@adoptthebook.com" class="btn-primary">Book a Strategy Session &rarr;</a>
       <a href="about-joris-beerda.html" class="btn-secondary">About Joris</a>
     </div>
   </div>
@@ -199,14 +198,14 @@
 <section class="clients">
   <div class="clients-label">Selected enterprise clients</div>
   <div class="client-logos">
-    <a href="#" class="client-logo"><img src="logos/microsoft.svg" alt="Microsoft" title="Microsoft"></a>
-    <a href="#" class="client-logo"><img src="logos/porsche.svg" alt="Porsche" title="Porsche"></a>
-    <a href="#" class="client-logo"><img src="logos/booking.svg" alt="Booking.com" title="Booking.com"></a>
-    <a href="#" class="client-logo"><img src="logos/pg.svg" alt="Procter & Gamble" title="Procter & Gamble"></a>
-    <a href="#" class="client-logo"><img src="logos/pfizer.svg" alt="Pfizer" title="Pfizer"></a>
-    <a href="#" class="client-logo"><img src="logos/google.svg" alt="Google" title="Google"></a>
-    <a href="#" class="client-logo"><img src="logos/dbs.svg" alt="DBS Bank" title="DBS Bank"></a>
-    <a href="#" class="client-logo"><img src="logos/latam.svg" alt="LATAM Airlines" title="LATAM Airlines"></a>
+    <img src="logos/microsoft.svg" alt="Microsoft client logo" class="client-logo">
+    <img src="logos/porsche.svg" alt="Porsche client logo" class="client-logo">
+    <img src="logos/booking.svg" alt="Booking.com client logo" class="client-logo">
+    <img src="logos/pg.svg" alt="Procter & Gamble client logo" class="client-logo">
+    <img src="logos/pfizer.svg" alt="Pfizer client logo" class="client-logo">
+    <img src="logos/google.svg" alt="Google client logo" class="client-logo">
+    <img src="logos/dbs.svg" alt="DBS Bank client logo" class="client-logo">
+    <img src="logos/latam.svg" alt="LATAM Airlines client logo" class="client-logo">
   </div>
 </section>
 
@@ -221,19 +220,19 @@
   <div class="section-label" style="text-align:center;margin-bottom:16px;">Validated by</div>
   <h2>Recognized by the institutions that set the standard.</h2>
   <div class="validation-logos">
-    <a href="https://hbsp.harvard.edu/inspiring-minds/boost-student-engagement-gamification-strategies" class="validation-logo"><img src="logos/harvard.svg" alt="Harvard University" title="Harvard University"></a>
-    <a href="https://asia.stanford.edu/course/entrepreneurship-in-asian-high-tech-industries/2011-entrepreneurship-in-asian-high-tech-industries/yu-kai-chou/" class="validation-logo"><img src="logos/stanford.svg" alt="Stanford University" title="Stanford University"></a>
-    <a href="https://dspace.mit.edu/bitstream/handle/1721.1/144819/gupta-harshg-sm-idm-2022-thesis.pdf" class="validation-logo"><img src="logos/mit.svg" alt="MIT" title="MIT"></a>
-    <a href="https://www.wsj.com/articles/BL-WB-59035" class="validation-logo"><img src="logos/wsj.svg" alt="Wall Street Journal" title="Wall Street Journal"></a>
-    <a href="https://www.forbes.com/councils/forbestechcouncil/2020/05/21/game-on-how-gamification-pragmatically-impacts-the-future-of-cybersecurity-training/" class="validation-logo"><img src="logos/forbes.svg" alt="Forbes" title="Forbes"></a>
-    <a href="https://csrc.nist.gov/CSRC/media/Events/Federal-Information-Systems-Security-Educators-As/documents/9.pdf" class="validation-logo"><img src="logos/nist.svg" alt="NIST" title="NIST"></a>
+    <img src="logos/harvard.svg" alt="Harvard University" class="validation-logo">
+    <img src="logos/stanford.svg" alt="Stanford University" class="validation-logo">
+    <img src="logos/mit.svg" alt="MIT" class="validation-logo">
+    <img src="logos/wsj.svg" alt="Wall Street Journal" class="validation-logo">
+    <img src="logos/forbes.svg" alt="Forbes" class="validation-logo">
+    <img src="logos/nist.svg" alt="NIST" class="validation-logo">
   </div>
 </section>
 
 <section class="cta-section" id="contact">
   <h2>Ready to design motivation that moves your numbers?</h2>
   <p>Enterprise consulting, speaking inquiries, and strategy sessions.</p>
-  <a href="mailto:joris@octalysisgroup.com" class="btn-primary">Book a Strategy Session &rarr;</a>
+  <a href="mailto:yours@adoptthebook.com" class="btn-primary">Book a Strategy Session &rarr;</a>
 </section>
 
 <footer>
