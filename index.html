@@ -110,9 +110,9 @@
   /* CLIENT LOGOS */
   .clients { padding:158px 132px; text-align:center; max-width:4752px; margin:0 auto; }
   .clients-label { font-size:31px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; color:var(--text-dim); margin-bottom:88px; }
-  .client-logos { display:grid; grid-template-columns:repeat(8,1fr); gap:40px; justify-items:center; }
-  .client-logo { display:flex; align-items:center; justify-content:center; height:143px; width:100%; filter:grayscale(1) opacity(0.58); transition:filter .3s ease; }
-  .client-logo img { max-height:120px; max-width:100%; width:auto; height:auto; object-fit:contain; }
+  /* CLIENT LOGOS - Desktop (reverted to original) */
+  .client-logos { display:flex; justify-content:space-between; flex-wrap:nowrap; gap:53px; align-items:center; }
+  .client-logo { height:143px; width:auto; filter:grayscale(1) opacity(0.58); transition:filter .3s ease; flex-shrink:1; min-width:0; }
   .client-logo:hover { filter:grayscale(0) opacity(1); }
 
   /* STATS */
@@ -126,9 +126,9 @@
   .validation { padding:220px 132px; background:var(--bg-mid); border-top:2px solid var(--border); border-bottom:2px solid var(--border); }
   .validation-inner { max-width:4752px; margin:0 auto; text-align:center; }
   .validation h2 { font-family:'Playfair Display',serif; font-size:clamp(75px,3.5vw,106px); font-weight:500; margin-bottom:106px; }
-  .validation-logos { display:grid; grid-template-columns:repeat(6,1fr); gap:40px; justify-items:center; }
-  .validation-logo { display:flex; align-items:center; justify-content:center; height:143px; width:100%; filter:grayscale(1) opacity(0.55); }
-  .validation-logo img { max-height:120px; max-width:100%; width:auto; height:auto; object-fit:contain; }
+  /* VALIDATION LOGOS - Desktop (reverted to original) */
+  .validation-logos { display:flex; justify-content:space-between; flex-wrap:nowrap; gap:53px; align-items:center; }
+  .validation-logo { height:143px; width:auto; filter:grayscale(1) opacity(0.55); flex-shrink:1; min-width:0; }
 
   /* CONTACT FORM */
   .cta-section { padding:220px 132px; text-align:center; background:var(--bg); max-width:4752px; margin:0 auto; }
@@ -175,9 +175,8 @@
     .endorsement-photo img{width:280px; height:280px;}
 
     .clients{padding:60px 40px; text-align:center;}
-    .client-logos{grid-template-columns:repeat(4,1fr); gap:24px; justify-items:center;}
-    .client-logo{height:60px; width:100%;}
-    .client-logo img{max-height:42px;}
+    .client-logos{display:grid; grid-template-columns:repeat(4,1fr); gap:24px; justify-items:center;}
+    .client-logo{height:auto; max-height:48px; width:auto; max-width:100%; object-fit:contain;}
 
     .stats .stat{padding:48px 24px;}
     .stat-number{font-size:56px;}
@@ -185,9 +184,8 @@
 
     .validation{padding:60px 40px; text-align:center;}
     .validation h2{font-size:clamp(32px,3vw,48px); margin-bottom:48px;}
-    .validation-logos{grid-template-columns:repeat(3,1fr); gap:24px; justify-items:center;}
-    .validation-logo{height:60px; width:100%;}
-    .validation-logo img{max-height:42px;}
+    .validation-logos{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; justify-items:center;}
+    .validation-logo{height:auto; max-height:48px; width:auto; max-width:100%; object-fit:contain;}
 
     .cta-section{padding:80px 40px;}
     .cta-section h2{font-size:clamp(32px,4vw,56px);}
@@ -229,9 +227,8 @@
 
     .clients{padding:32px 18px; text-align:center;}
     .clients-label{font-size:10px; margin-bottom:20px;}
-    .client-logos{grid-template-columns:repeat(2,1fr); gap:20px 12px; justify-items:center;}
-    .client-logo{height:44px; width:100%;}
-    .client-logo img{max-height:30px;}
+    .client-logos{display:grid; grid-template-columns:repeat(2,1fr); gap:20px 12px; justify-items:center;}
+    .client-logo{height:auto; max-height:36px; width:auto; max-width:100%; object-fit:contain;}
 
     .stats{grid-template-columns:repeat(2,1fr);}
     .stat{padding:28px 12px; border-bottom:1px solid var(--border);}
@@ -240,9 +237,8 @@
 
     .validation{padding:40px 18px; text-align:center;}
     .validation h2{font-size:clamp(22px,6vw,32px); margin-bottom:28px;}
-    .validation-logos{grid-template-columns:repeat(2,1fr); gap:20px 12px; justify-items:center;}
-    .validation-logo{height:44px; width:100%;}
-    .validation-logo img{max-height:30px;}
+    .validation-logos{display:grid; grid-template-columns:repeat(2,1fr); gap:20px 12px; justify-items:center;}
+    .validation-logo{height:auto; max-height:36px; width:auto; max-width:100%; object-fit:contain;}
 
     .cta-section{padding:48px 18px;}
     .cta-section h2{font-size:clamp(24px,7vw,36px); margin-bottom:14px; line-height:1.2;}
@@ -322,14 +318,14 @@
 <section class="clients">
   <div class="clients-label">Selected enterprise clients</div>
   <div class="client-logos">
-    <div class="client-logo"><img src="logos/microsoft.svg" alt="Microsoft client logo"></div>
-    <div class="client-logo"><img src="logos/porsche.svg" alt="Porsche client logo"></div>
-    <div class="client-logo"><img src="logos/booking.svg" alt="Booking.com client logo"></div>
-    <div class="client-logo"><img src="logos/pg.svg" alt="Procter & Gamble client logo"></div>
-    <div class="client-logo"><img src="logos/pfizer.svg" alt="Pfizer client logo"></div>
-    <div class="client-logo"><img src="logos/google.svg" alt="Google client logo"></div>
-    <div class="client-logo"><img src="logos/dbs.svg" alt="DBS Bank client logo"></div>
-    <div class="client-logo"><img src="logos/latam.svg" alt="LATAM Airlines client logo"></div>
+    <img src="logos/microsoft.svg" alt="Microsoft client logo" class="client-logo">
+    <img src="logos/porsche.svg" alt="Porsche client logo" class="client-logo">
+    <img src="logos/booking.svg" alt="Booking.com client logo" class="client-logo">
+    <img src="logos/pg.svg" alt="Procter & Gamble client logo" class="client-logo">
+    <img src="logos/pfizer.svg" alt="Pfizer client logo" class="client-logo">
+    <img src="logos/google.svg" alt="Google client logo" class="client-logo">
+    <img src="logos/dbs.svg" alt="DBS Bank client logo" class="client-logo">
+    <img src="logos/latam.svg" alt="LATAM Airlines client logo" class="client-logo">
   </div>
 </section>
 
@@ -345,12 +341,12 @@
   <div class="section-label" style="text-align:center;margin-bottom:16px;">Validated by</div>
   <h2>Recognized by the institutions that set the standard.</h2>
   <div class="validation-logos">
-    <div class="validation-logo"><img src="logos/harvard.svg" alt="Harvard University"></div>
-    <div class="validation-logo"><img src="logos/stanford.svg" alt="Stanford University"></div>
-    <div class="validation-logo"><img src="logos/mit.svg" alt="MIT"></div>
-    <div class="validation-logo"><img src="logos/wsj.svg" alt="Wall Street Journal"></div>
-    <div class="validation-logo"><img src="logos/forbes.svg" alt="Forbes"></div>
-    <div class="validation-logo"><img src="logos/nist.svg" alt="NIST"></div>
+    <img src="logos/harvard.svg" alt="Harvard University" class="validation-logo">
+    <img src="logos/stanford.svg" alt="Stanford University" class="validation-logo">
+    <img src="logos/mit.svg" alt="MIT" class="validation-logo">
+    <img src="logos/wsj.svg" alt="Wall Street Journal" class="validation-logo">
+    <img src="logos/forbes.svg" alt="Forbes" class="validation-logo">
+    <img src="logos/nist.svg" alt="NIST" class="validation-logo">
   </div>
   </div>
 </section>
